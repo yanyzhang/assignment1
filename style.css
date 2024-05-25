@@ -1,0 +1,166 @@
+
+body {
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+
+.container {
+    position: relative;
+    display: block;
+
+  }
+  
+.container img {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.title {
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+    font-size: 2vw;
+
+}
+
+
+button {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 2.5vw;
+    border: 2px;
+    transition: 0.3s;
+    border-radius: 0.25vw;
+    color: rgb(54, 52, 52);
+
+}
+
+button:hover {background-color: rgba(180, 176, 176, 0.5);}
+
+
+
+.slogan {
+    position: absolute;
+    top: 15vw;
+    left: 10vw;
+    color: white;
+    margin: auto;
+    width: 80%;
+
+    /* transform: translate(-50%, -50%); */
+}
+
+.slogan1 {
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.whatwedo {
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+
+
+.parts {
+    background-color: #E7E9EB;
+    text-align: center;
+    margin-top: 5em;
+
+}
+
+.parts h3 {
+    /* text-align: center; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+    font-weight: 500;
+    font-size: 1.5em;
+    color: rgb(87, 87, 87);
+    position: relative;
+    padding-top: 2em;
+
+}
+
+
+
+.grid-container {
+    display: grid;
+    /* justify-content: center; */
+    gap: 1rem;
+    /* grid-template-columns: auto auto auto; */
+    /* background-color: #ffffff; */
+    /* padding: 70px; */
+    padding: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.grid-container img {
+    display: block;
+    /* padding: 0.75em; */
+    width: 100%;  
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+
+
+    /* border: 1px solid rgba(138, 124, 124, 0.8); */
+}
+
+.grid-item {
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* font-size: 10vw; */
+    text-align: center;
+    padding: 1em;
+
+}
+
+@media (min-width: 300px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+  }
+
+/*add: if display size if less than certain, then the grid-item p should be hidden */
+
+@media (min-width: 600px) {
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+  }
+
+@media (min-width: 900px) {
+    .grid-container { grid-template-columns: repeat(3, 1fr); }
+  }
+
+@media only screen and (max-width: 400px) {
+    .grid-item p {
+        display: none;
+    }
+}
+
+
+.grid-item h5 {
+    font-size: 1em;
+    color: #b4b4b4;
+    height: 2em;
+ 
+}
+
+.grid-item p {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(56, 56, 56);
+    height: 7em;
+}
+
+.grid-item a {
+    font-size: 0.75em;
+    color: rgb(56, 56, 56);
+    text-transform: uppercase;
+
+
+}
